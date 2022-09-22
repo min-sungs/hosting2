@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="./findpw.css">
+    <title>GooHae-FindPw</title>
+</head>
+
+<body>
+    <header>
+        <div class="logoWrap">
+            <div class="logoInner">
+                <h1 class="logo">
+                    <a href="../index.html">LOGO</a>
+                </h1>
+            </div>
+
+            <nav class="headerNav">
+                <ul>
+                    <li><a href="../Login/Login.html">LOGIN</a></li>
+                    <li><a href="../MyPage/MyPageMain/MyPage.html">마이페이지</a></li>
+                    <li><a href="../signup/signUp.html">회원가입</a></li>
+                    <li class="cart"><a href="../Shoppingcart/Shoppingcart.html">CART</a></li>
+                    <li>
+                        <form action="#">
+                            <input type="text">
+                            <button></button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="categoryWrap">
+            <ul class="category">
+                <li><a href="../sub_list_page/1.sub_bed/sub_bed.html">침실</a>
+                    <ul>
+                        <li><a href="../sub_list_page/1.sub_bed/1.bed_one/bed_one.html">일체형</a></li>
+                        <li><a href="../sub_list_page/1.sub_bed/2.bed_mattress/bed_mattress.html">매트리스</a></li>
+                        <li><a href="../sub_list_page/1.sub_bed/3.bed_table/bed_table.html">협탁</a></li>
+                        <li><a href="../sub_list_page/1.sub_bed/4.bed_makeup/bed_makeup.html">화장대</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../sub_list_page/2.sub_living/sub_living.html">리빙</a>
+                    <ul>
+                        <li><a href="../sub_list_page/2.sub_living/1.living_sofa/living_sofa.html">소파</a></li>
+                        <li><a href="../sub_list_page/2.sub_living/2.living_table/living_table.html">테이블</a></li>
+                        <li><a href="../sub_list_page/2.sub_living/3.living_chair/living_chair.html">의자</a></li>
+                        <li><a href="../sub_list_page/2.sub_living/4.living_tv/living_tv.html">TV장</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../sub_list_page/3.sub_kitchen/sub_kitchen.html">주방</a>
+                    <ul>
+                        <li><a href="../sub_list_page/3.sub_kitchen/1.kitchen_table/kitchen_table.html">식탁</a></li>
+                        <li><a href="../sub_list_page/3.sub_kitchen/2.kitchen_chair/kitchen_chair.html">의자</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../sub_list_page/4.sub_dressroom/sub_dressroom.html">드레스룸</a>
+                    <ul>
+                        <li><a
+                                href="../sub_list_page/4.sub_dressroom/1.dressroom_storage/dressroom_storage.html">수납장</a>
+                        </li>
+                        <li><a href="../sub_list_page/4.sub_dressroom/2.dressroom_hanger/dressroom_hanger.html">행거</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="../customer/main.html">고객센터</a>
+                    <ul>
+                        <li><a href="../customer/FAQ/faq.html">FAQ</a></li>
+                        <li><a href="../customer/notice/notice.html">공지사항</a></li>
+                        <li><a href="../customer/inquiry/inquiry.html">QnA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="container_inner">
+                <div class="head">
+                    <h2>내 계정 찾기</h2>
+                    <ul>
+                        <li>
+                            <a href="../FindID/findId.html">아이디찾기</a>
+                        </li>
+                        <li>
+                            <a href="#">비밀번호 찾기</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="body">
+                    <form action="" method="post">
+                        <input type="id" id="fd_id" name="fd_name" required placeholder="아이디">
+                        <input type="text" id="fd_name" name="fd_name" required placeholder="이름">
+                        <div>
+                            <input type="text" name="mobile1" id="mobile" required readonly value="010">
+                            -
+                            <input type="text" name="mobile2" id="mobile" minlength="4" maxlength="4" required>
+                            -
+                            <input type="text" name="mobile3" id="mobile" minlength="4" maxlength="4" required>
+                        </div>
+                        <input type="email" name="fd_email" id="fd_email" required placeholder="이메일">
+                        <button type="submit">비밀번호 찾기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerInfo">
+            <p>
+                <span><a href="#">쇼핑몰 이용안내</a></span>
+                <span><a href="#">개인정보 처리방침</a></span>
+                <span><a href="#">이용약관</a></span>
+            </p>
+        </div>
+
+        <div class="footerStory">
+            <div>
+                <div>
+                    <h3>그린컴퓨터아카데미</h3>
+                </div>
+
+                <div>
+                    <h3>구해조</h3>
+                </div>
+
+                <div class="teamEmail">
+                    <span>KJW@email.com</span>
+                    <span>KMS@email.com</span>
+                    <span>YJH@email.com</span>
+                    <span>LHS@email.com</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
