@@ -1,0 +1,231 @@
+/* ============================================================================================ */
+/* ============================================================================================ */
+/* header frame */
+
+header {
+    font-size: 10px;
+    color: black;
+}
+
+/* ============================================================================================ */
+/* === 헤더 윗부분 === */
+
+.logoWrap {
+    width: 85%;
+    height: 100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-areas: 
+    " headNav logo search ";
+}
+
+.logoWrap>.logoInner {
+    grid-area: logo;
+}
+
+.logoWrap>.headerNav {
+    grid-area: headNav;
+}
+
+.logoWrap>.searchNav {
+    grid-area: search;
+}
+
+/* === 로고 === */
+
+.logoWrap>.logoInner>.logo {
+    width: 100%;
+    height: 100%;
+    min-width: 150px;
+}
+
+.logoWrap>.logoInner>.logo>a {
+    display: block;
+    height: 100%;
+    background: url(../image/LOGO.png) center/100% no-repeat;
+    text-indent: -9999em;
+    opacity: 0.7;
+}
+
+/* === 헤더 네비 === */
+
+.logoWrap>.headerNav>ul {
+    height: 100%;
+    display: flex;
+    gap: 3%;
+}
+
+.logoWrap>.headerNav>ul>li {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+}
+
+.logoWrap>.headerNav>ul>.cart>a {
+    display: block;
+    width: 40%;
+    height: 40%;
+    background: url(../image/cart2.png) center/75% no-repeat;
+    text-indent: -9999em;
+    opacity: 0.7;
+}
+
+.logoWrap>.headerNav>ul>li>a {
+    font-size: 1.3em;
+}
+
+/* === 검색창 === */
+
+.logoWrap>.searchNav>ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logoWrap>.searchNav>ul>li {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.logoWrap>.searchNav>ul>li>form {
+    width: 100%;
+    height: 45%;
+    padding: 0 0 0 10%;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    min-width: 180px;
+}
+
+.logoWrap>.searchNav>ul>li>form>input {
+    width: 80%;
+    height: 80%;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.logoWrap>.searchNav>ul>li>form>button {
+    border: 1px solid black;
+    width: 16%;
+    height: 80%;
+    background: url(../image/search2.png) center/80% no-repeat;
+    border: none;
+    opacity: 0.7;
+}
+
+
+/* ============================================================================================ */
+/* === 카테고리 === */
+
+.categoryWrap {
+    height: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.categoryWrap a {
+    opacity: 0.7;
+}
+
+.categoryWrap>.category {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: 
+    " . bed liv kit dress help .";
+    gap: 3%;
+}
+
+.categoryWrap>.category>li {
+    height: 100%;
+    position: relative;
+}
+
+.categoryWrap>.category>li>a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.categoryWrap>.category>li:first-of-type {
+    grid-area: bed;
+}
+
+.categoryWrap>.category>li:nth-of-type(2) {
+    grid-area: liv;
+}
+
+.categoryWrap>.category>li:nth-of-type(3) {
+    grid-area: kit;
+}
+
+.categoryWrap>.category>li:nth-of-type(4) {
+    grid-area: dress;
+}
+
+.categoryWrap>.category>li:last-of-type {
+    grid-area: help;
+}
+
+.categoryWrap>.category>li>ul {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.categoryWrap>.category>li>ul>li {
+    font-size: 1.1em;
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+}
+
+.categoryWrap>.category>li>ul>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.categoryWrap>.category>li>ul>li:not(:first-of-type) {
+    border-top: 0.5px dashed rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================================================ */
+/* === 헤더 hover === */
+
+.logoWrap>.logoInner>.logo>a:hover,
+.logoWrap>.headerNav>ul>.cart>a:hover,
+.logoWrap>.searchNav>ul>li>form>button:hover {
+    opacity: 1;
+}
+
+.logoWrap>.headerNav>ul>li:first-of-type>a:hover,
+.categoryWrap>.category>li>a:hover {
+    text-decoration: underline;
+}
+
+.categoryWrap>.category>li:hover ul {
+    display: block;
+}
+
+.categoryWrap>.category>li>ul>li>a:hover {
+    background-color: antiquewhite;
+}
+
+/* ============================================================================================ */
+/* ============================================================================================ */

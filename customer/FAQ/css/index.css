@@ -1,0 +1,256 @@
+/* ========================== 고객센터 메인 ======================== */
+
+
+
+section {
+    width: 720px;
+    height: auto;
+    margin: 5% auto;
+    position: relative;
+}
+
+
+
+/* ========================== 고객센터 왼쪽 메뉴 ======================== */
+
+section .left {
+    width: 160px;
+    position: absolute;
+    right: 110%;
+    top: 8px;
+    padding: 30px 20px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    letter-spacing: -2px;
+    z-index: 3;
+}
+
+section .left h2 {
+    margin-bottom: 30px;
+    color: black;
+    font-size: 20px;
+}
+
+
+section .left .categoryMenu li {
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+section .left .categoryMenu li a {
+    display: block;
+}
+
+section .left .categoryMenu li:hover a {
+    color: black;
+    font-weight: bold;
+}
+
+
+section .left .categoryMenu li a[href*="#"] {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* ==================================================================== */
+
+
+
+
+
+
+
+
+
+/* ========================== FAQ  ======================== */
+
+
+section .right {
+    text-align: center;
+}
+
+section .right h1 {
+    font-size: 38px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 2%;
+    letter-spacing: -2px;
+}
+
+section .right>p {
+    font-size: 1.1em;
+    color: black;
+    letter-spacing: -1px;
+    margin-bottom: 7.5%;
+}
+
+/* ========================== 검색창  ======================== */
+
+section .right form {
+    border: 1px solid silver;
+    padding: 3% 4%;
+}
+
+section .right form input {
+    width: 70%;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+section .right form img {
+    display: inline-block;
+    width: 4.5%;
+    margin-left: 1.5%;
+    margin-top: -0.5%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+/* ========================== 카테고리  ======================== */
+
+
+section .right .mainCategory ul {
+    display: grid;
+    width: 720px;
+    height: 100px;
+    grid-template: 1fr 1fr / repeat(5, 1fr);
+    margin: 50px 0;
+    border-top: 1px solid silver;
+}
+
+section .right .mainCategory ul li {
+    border: 1px solid silver;
+    border-top: 0;
+    border-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+section .right .mainCategory ul li:nth-child(1),
+section .right .mainCategory ul li:nth-child(6) {
+    border-left: 1px solid silver;
+}
+
+section .right .mainCategory ul li:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+section .right .mainCategory ul li:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* ========================== FAQ 테이블 ======================== */
+
+section .right table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* col 넓이 */
+
+section .right table .thead1 {
+    width: 10%;
+}
+
+section .right table .thead2 {
+    width: 65%;
+}
+
+section .right table .thead3 {
+    width: 15%;
+}
+
+section .right table .thead4 {
+    width: 10%;
+}
+
+/* 공지사항 목록 */
+
+section .right table thead {
+    border-top: 2px solid silver;
+    border-bottom: 1px solid silver;
+}
+
+section .right table thead tr th {
+    padding: 3px 0;
+    font-size: 14px;
+}
+
+
+section .right table tbody tr {
+    border-bottom: 1px solid silver;
+}
+
+section .right table tbody tr td {
+    font-size: 13px;
+    color: black;
+    letter-spacing: -1px;
+}
+
+section .right table tbody tr td.title a {
+    display: block;
+    padding: 4% 0;
+}
+
+
+/* 호버시 효과 */
+
+
+section .right table tbody tr:hover,
+section .right table tbody tr:hover a {
+    color: black;
+    font-weight: bold;
+}
+
+/* ==================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================== FAQ 테이블 밑 문의사항 글  ======================== */
+
+section .right>.textBox {
+    background-color: #F0F0F0;
+    margin: 30px 0 0 0;
+    padding: 20px 0;
+}
+
+
+/* ========================== 페이지 넘버  ======================== */
+
+section .right .pager {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+section .right .pager li {
+    width: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+section .right .pager li:nth-child(1) {
+    border: 1px solid silver;
+    border-radius: 50%;
+}

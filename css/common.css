@@ -1,0 +1,33 @@
+@font-face {
+    font-family: ikkeullim;
+    src: url(../font/ikkeullim.ttf) format("truetype"),
+        url(../font/ikkeullim.woff) format("woff"),
+        url(../font/ikkeullim.eot) format("embedded-opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    font-family: ikkeullim;
+    font-size: 10px;
+}
+
+input,
+label,
+select,
+textarea {
+    font-family: ikkeullim;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,37 @@
+@media screen and (max-width:1023px) {
+    main {
+        padding-top: 50px;
+        font-size: 7px;
+    }
+
+    .newProduct>div>article,
+    .bestProduct>div>article,
+    .imgCategory>article,
+    .review>div>div>article {
+        z-index: -1;
+    }
+
+    /* === 신상품 === */
+
+    .newProduct>div {
+        justify-content: space-evenly;
+    }
+
+    .newProduct>div>article:nth-of-type(-n + 2) {
+        width: 30%;
+    }
+
+    .newProduct>div>article:nth-of-type(n + 3) {
+        display: none;
+    }
+
+    /* === 베스트 === */
+
+    .bestProduct>div {
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+
+    .bestProduct>div>article:nth-of-type(n + 5) {
+        display: none;
+    }
+}

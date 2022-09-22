@@ -1,0 +1,518 @@
+
+/* ============================================================================================ */
+/* ============================================================================================ */
+/* main frame */
+
+main {
+    width: 100%;
+    font-size: 10px;
+}
+
+/* ============================================================================================ */
+/* === 배너 === */
+
+.banner {
+    width: 100%;
+    height: 40vw;
+}
+
+.banner>.bannerImage {
+    background: url(../images/index_image/banner.jpg) center/cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* ============================================================================================ */
+/* === 신상품 === */
+
+.newProduct {
+    width: 85%;
+    margin: 1% auto;
+    height: 30vw;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 3%;
+}
+
+.newProduct>h2 {
+    grid-row: 1 / 3;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.newProduct>div {
+    grid-row: 3 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newProduct>div>article {
+    width: 23%;
+    position: relative;
+}
+
+.newProduct>div>article>div {
+    height: 80%;
+}
+
+.newProduct>div>article>p {
+    height: 20%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.newProduct>div>article>p>span {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.newProduct>div>article>.productA {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* === 신상품 이미지 === */
+
+.newProduct>div>article>div::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.newImg1 {
+    background: url(../images/index_image/new1-1.jpg) center/cover;
+}
+
+.newImg1::after {
+    background: url(../images/index_image/new1-2.jpg) center/140%;
+    opacity: 0;
+}
+
+.newImg2 {
+    background: url(../images/index_image/new2-1.jpg) center/cover;
+}
+
+.newImg2::after {
+    background: url(../images/index_image/new2-2.jpg) center/140%;
+    opacity: 0;
+}
+
+.newImg3 {
+    background: url(../images/index_image/new3-1.jpg) center/cover;
+}
+
+.newImg3::after {
+    background: url(../images/index_image/new3-2.jpg) center/140%;
+    opacity: 0;
+}
+
+.newImg4 {
+    background: url(../images/index_image/new4-1.jpg) center/cover;
+}
+
+.newImg4::after {
+    background: url(../images/index_image/new4-2.jpg) center/140%;
+    opacity: 0;
+}
+
+/* === 신상품 hover === */
+
+.newProduct>div>article:hover {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.newProduct>div>article:hover>div::after {
+    opacity: 1;
+    transition: all 1s;
+}
+
+/* ============================================================================================ */
+/* === 베스트 === */
+
+.bestProduct {
+    width: 85%;
+    margin: 1% auto;
+    height: 70vw;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1.5%;
+}
+
+.bestProduct>h2 {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.bestProduct>div>article {
+    position: relative;
+}
+
+.bestProduct>div {
+    grid-row: 2 / -1;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 0.5%;
+}
+
+.bestProduct>div>article>div {
+    height: 80%;
+}
+
+.bestProduct>div>article>p {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%
+}
+
+.bestProduct>div>article>p>span {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+}
+
+.bestProduct>div>article>.productA {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* === 베스트 이미지 === */
+
+.bestProduct>div>article>div::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.bestImg1 {
+    background: url(../images/index_image/best1-1.jpg) center/cover;
+}
+
+.bestImg1::after {
+    background: url(../images/index_image/best1-2.jpg) center/140%;
+    opacity: 0;
+}
+
+.bestImg2 {
+    background: url(../images/index_image/best2-1.jpg) center/cover;
+}
+
+.bestImg2::after {
+    background: url(../images/index_image/best2-2.jpg) center/140%;
+    opacity: 0;
+}
+
+.bestImg3 {
+    background: url(../images/index_image/best3-1.jpg) center/cover;
+}
+
+.bestImg3::after {
+    background: url(../images/index_image/best3-2.jpg) center/140%;
+    opacity: 0;
+}
+
+.bestImg4 {
+    background: url(../images/index_image/best4-1.jpg) center/cover;
+}
+
+.bestImg4::after {
+    background: url(../images/index_image/best4-2.jpg) center/140%;
+    opacity: 0;
+}
+
+.bestImg5 {
+    background: url(../images/index_image/best1-1.jpg) center/cover;
+}
+
+.bestImg5::after {
+    background: url(../images/index_image/best1-2.jpg) center/140%;
+    opacity: 0;
+}
+
+.bestImg6 {
+    background: url(../images/index_image/best2-1.jpg) center/cover;
+}
+
+.bestImg6::after {
+    background: url(../images/index_image/best2-2.jpg) center/140%;
+    opacity: 0;
+}
+
+/* === 베스트 hover === */
+
+.bestProduct>div>article:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.bestProduct>div>article:hover>div::after {
+    opacity: 1;
+    transition: all 1s;
+}
+
+/* ============================================================================================ */
+/* === 이미지 카테고리 === */
+
+.imgCategory {
+    height: 35vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 2% 0;
+}
+
+.imgCategory>article {
+    position: relative;
+}
+
+.imgCategory>article:first-of-type {
+    grid-column: 1 / 4;
+}
+
+.imgCategory>article:nth-of-type(2) {
+    grid-column: 4 / 7;
+}
+
+.imgCategory>article:nth-of-type(3) {
+    grid-column: 7 / 10;
+}
+
+.imgCategory>article:last-of-type {
+    grid-column: 10 / -1;
+}
+
+.imgCategory>article>div {
+    height: 100%;
+}
+
+.imgCategory>article>span {
+    position: absolute;
+    width: 40%;
+    left: calc((100% - 40%)/2);
+    bottom: 3.5%;
+    text-align: center;
+    font-size: 1.8em;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.imgCategory>article>a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* 카테고리 이미지 */
+
+.imgCategory>article>div::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.categoryImg1 {
+    background: url(../images/index_image/review2.jpg) center/cover;
+}
+
+.categoryImg1::after {
+    background: url(../images/index_image/review2.jpg) center/300%;
+    opacity: 0;
+}
+
+.categoryImg2 {
+    background: url(../images/index_image/living.jpg) center/cover;
+}
+
+.categoryImg2::after {
+    background: url(../images/index_image/living.jpg) center/200%;
+    opacity: 0;
+}
+
+.categoryImg3 {
+    background: url(../images/index_image/dining.jpg) center/cover;
+}
+
+.categoryImg3::after {
+    background: url(../images/index_image/dining.jpg) center/200%;
+    opacity: 0;
+}
+
+.categoryImg4 {
+    background: url(../images/index_image/review4.jpg) center/cover;
+}
+
+.categoryImg4::after {
+    background: url(../images/index_image/review4.jpg) center/160%;
+    opacity: 0;
+}
+
+/* === 카테고리 hover === */
+
+.imgCategory>article:hover>div::after {
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+
+/* ============================================================================================ */
+/* === 리뷰 === */
+
+.review {
+    height: 25vw;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.review>div {
+    width: 85%;
+    margin: auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 3%;
+}
+
+.review>div>h2 {
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.review>div>div {
+    grid-row: 4 / -1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2%;
+}
+
+.review>div>div>article {
+    position: relative;
+}
+
+.review>div>div>article>div {
+    height: 70%;
+}
+
+.review>div>div>article>p {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.review>div>div>article>p>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review>div>div>article>p>span:not(:nth-of-type(3)) {
+    height: 30%;
+    font-size: 1.5em;
+}
+
+.review>div>div>article>p>span:nth-of-type(3) {
+    height: 40%;
+    font-size: 1.4em;
+}
+
+.reviewA {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* === 리뷰 이미지 === */
+
+.review>div>div>article>div::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.reviewImg1 {
+    background: url(../images/index_image/review1.jpg) center/cover;
+}
+
+.reviewImg1::after {
+    background: url(../images/index_image/review1.jpg) center/200%;
+    opacity: 0;
+}
+
+.reviewImg2 {
+    background: url(../images/index_image/review2.jpg) center/cover;
+}
+
+.reviewImg2::after {
+    background: url(../images/index_image/review2.jpg) center/200%;
+    opacity: 0;
+}
+
+.reviewImg3 {
+    background: url(../images/index_image/review3.jpg) center/cover;
+}
+
+.reviewImg3::after {
+    background: url(../images/index_image/review3.jpg) center/200%;
+    opacity: 0;
+}
+
+.reviewImg4 {
+    background: url(../images/index_image/review1.jpg) center/cover;
+}
+
+.reviewImg4::after {
+    background: url(../images/index_image/review1.jpg) center/200%;
+    opacity: 0;
+}
+
+.reviewImg5 {
+    background: url(../images/index_image/review2.jpg) center/cover;
+}
+
+.reviewImg5::after {
+    background: url(../images/index_image/review2.jpg) center/200%;
+    opacity: 0;
+}
+
+/* === 리뷰 hover === */
+
+.review>div>div>article:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.review>div>div>article:hover div::after {
+    opacity: 1;
+    transition: all 1s;
+}

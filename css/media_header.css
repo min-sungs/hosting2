@@ -1,0 +1,201 @@
+/* ======================================================================================= */
+/* === 1024미만일 때 모바일 헤더 === */
+@media screen and (max-width:1023px) {
+
+    header>.logoWrap {display: none;}
+    header>.categoryWrap {display: none;}
+    header>.mediaHeader {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid silver;
+        background-color: white;
+        position: fixed;
+    }
+
+    header>.mediaHeader {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    /* === media 헤더 로고 === */
+
+    header>.mediaHeader>.mediaLogo {
+        width: 15%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: calc((100% - 15%)/2);
+    }
+
+    header>.mediaHeader>.mediaLogo>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: -9999em;
+        background: url(../images/LOGO.png) center/90% no-repeat;
+    }
+
+    /* === media 헤더 네비 구성 === */
+
+    header>.mediaHeader>.mediaHeadInfo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* ======================================================================================= */
+    /* 헤더 왼쪽 구성 */
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab {
+        width: 14%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /* 카테고리 */
+    
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab>.mediaCategory {
+        width: 48%;
+        height: 100%;
+        background: url(../images/index_image/mediaCateButton.png) center/50% no-repeat;
+    }
+    
+    header>.mediaHeader>input {
+        display: none;
+    }
+    
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab>.mediaCategory>div {
+        width: 100vw;
+        height: calc(100vh - 50px);
+        position: fixed;
+        top: 50px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 300;
+        display:none;
+    }
+
+    /* 카테고리 list 클릭 시 */
+
+    header>.mediaHeader>input:checked+.mediaHeadInfo>.mediaLeftTab>.mediaCategory>div {
+        display: block;
+    }
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab>.mediaCategory>div>ul {
+        width: 30%;
+        height: 100vh;
+        background-color: white;
+        font-size: 2em;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab>.mediaCategory>div>ul>li>a {
+        display: block;
+        padding: 5%;
+    }
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab>.mediaCategory>div>ul>li>ul {
+        display: none;
+        margin-top: 6%;
+    }
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab>.mediaCategory>div>ul>li>ul>li {
+        font-size: 0.8em;
+        margin-left: 15%;
+    }
+    
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab>.mediaCategory>div>ul>li>ul>li>a {
+        display: block;
+        padding: 10%;
+    }
+
+    header>.mediaHeader>label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6.6%;
+        height: 100%;
+    }
+
+    /* 카테고리 hover */
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab>.mediaCategory>div>ul>li:hover>ul {
+        display: block;
+    }
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab>.mediaCategory>div>ul>li>ul>li:hover {
+        background-color: antiquewhite;
+    }
+
+    /* 검색 */
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab>.mediaSearch {
+        width: 48%;
+        height: 100%;
+    }
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaLeftTab>.mediaSearch>button {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: url(../images/search2.png) center/50% no-repeat;
+        cursor: pointer;
+    }
+
+    /* ======================================================================================= */
+    /* 헤더 오른쪽 구성 */
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaRightNav {
+        width: 14%;
+        height: 100%;
+    }
+    
+    header>.mediaHeader>.mediaHeadInfo>.mediaRightNav>ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaRightNav>ul>li {
+        width: 48%;
+        height: 100%;
+    }
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaRightNav>ul>.mediaLogin>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(../images/index_image/mediaLogin.png) center/60% no-repeat;
+    }
+
+    header>.mediaHeader>.mediaHeadInfo>.mediaRightNav>ul>.mediaCart>a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url(../images/cart2.png) center/60% no-repeat;
+    }
+}
+
+
+
+/* ======================================================================================= */
+/* === 1200px일 때 헤더네비 간격 고정 === */
+
+
+@media screen and (max-width:1200px) {
+    .logoWrap>.headerNav {
+        width: 400px;
+    }
+}

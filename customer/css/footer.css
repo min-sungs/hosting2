@@ -1,0 +1,72 @@
+/* ============================================================================================ */
+/* ============================================================================================ */
+/* footer frame */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+    min-width: 1600px;
+    height: 200px;
+}
+
+.footerInfo {
+    width: 1600px;
+    margin: auto;
+}
+
+/* ============================================================================================ */
+/* footerInfo frame */
+
+.footerInfo {
+    height: 30%;
+    text-align: right;
+    padding: .5%;
+    position: relative;
+}
+
+.footerInfo p {
+    position: absolute;
+    top: calc((100% - 14px)/2);
+    right: 0;
+}
+
+.footerInfo p span {
+    margin: 0 20px;
+}
+
+.footerInfo p span:hover a {
+    text-decoration: underline;
+    color: black;
+}
+
+/* ============================================================================================ */
+/* footerStory frame */
+
+.footerStory {
+    width: 100%;
+    height: 70%;
+    padding: .5%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footerStory>div {
+    width: 1600px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.footerStory div div:not(:last-of-type) {
+    height: 50%;
+}
+
+.footerStory .teamEmail {
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

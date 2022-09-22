@@ -1,0 +1,82 @@
+/* ============================================================================================ */
+/* ============================================================================================ */
+/* footer frame */
+
+footer {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 10px;
+    color: black;
+}
+
+.footerInfo {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.footerInfo>p,
+.footerStory {
+    width: 85%;
+    margin: auto;
+}
+
+/* === 푸터 info === */
+
+.footerInfo>p {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr) 3fr;
+    grid-template-areas: 
+    " . info secu use .";
+}
+
+.footerInfo>p>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+}
+
+.footerInfo>p>span:first-of-type {
+    grid-area: info;
+}
+
+.footerInfo>p>span:nth-of-type(2) {
+    grid-area: secu;
+}
+
+.footerInfo>p>span:nth-of-type(3) {
+    grid-area: use;
+}
+
+.footerInfo>p>span>a {
+    font-size: 1.15em;
+}
+
+/* === 푸터 내용 === */
+
+.footerStory>div {
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+    " name team . . . . . email ";
+}
+
+.footerStory>div>div:first-of-type {
+    grid-area: name;
+}
+
+.footerStory>div>div:nth-of-type(2) {
+    grid-area: team;
+}
+
+.footerStory>div>div:nth-of-type(3) {
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerStory>div>div:nth-of-type(3)>span {
+    height: 100%;
+}

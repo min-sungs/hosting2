@@ -1,0 +1,166 @@
+/* ========================== 고객센터 메인 ======================== */
+
+
+
+section {
+    width: 720px;
+    height: 800px;
+    margin: 5% auto;
+    position: relative;
+}
+
+
+
+/* ========================== 고객센터 왼쪽 메뉴 ======================== */
+
+section .left {
+    width: 160px;
+    position: absolute;
+    right: 110%;
+    top: 8px;
+    padding: 30px 20px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    letter-spacing: -2px;
+    z-index: 3;
+}
+
+section .left h2 {
+    margin-bottom: 30px;
+    color: black;
+    font-size: 20px;
+}
+
+
+section .left .categoryMenu li {
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+section .left .categoryMenu li a {
+    display: block;
+}
+
+section .left .categoryMenu li:hover a {
+    color: black;
+    font-weight: bold;
+}
+
+
+section .left .categoryMenu li a[href*="#"] {
+    color: black;
+    font-weight: bold;
+}
+
+
+
+/* ==================================================================== */
+
+
+
+
+
+
+
+
+
+/* ========================== 공지사항  ======================== */
+
+
+section .right {
+    text-align: center;
+}
+
+section .right h1 {
+    font-size: 38px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 10%;
+}
+
+section .right table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* col 넓이 */
+
+section .right table .thead1 {
+    width: 10%;
+}
+
+section .right table .thead2 {
+    width: 65%;
+}
+
+section .right table .thead3 {
+    width: 15%;
+}
+
+section .right table .thead4 {
+    width: 10%;
+}
+
+/* 공지사항 목록 */
+
+section .right table thead {
+    border-top: 2px solid silver;
+    border-bottom: 1px solid silver;
+}
+
+section .right table thead tr th {
+    padding: 3px 0;
+    font-size: 14px;
+}
+
+
+section .right table tbody tr {
+    border-bottom: 1px solid silver;
+}
+
+section .right table tbody tr td {
+    font-size: 13px;
+    color: black;
+    letter-spacing: -1px;
+}
+
+section .right table tbody tr td.title a {
+    display: block;
+    padding: 4% 0;
+}
+
+
+/* 호버시 효과 */
+
+
+section .right table tbody tr:hover,
+section .right table tbody tr:hover a {
+    color: black;
+    font-weight: bold;
+}
+
+/* ==================================================================== */
+
+
+
+
+
+/* ========================== 페이지 넘버  ======================== */
+
+section .right .pager {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+section .right .pager li {
+    width: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+section .right .pager li:nth-child(1) {
+    border: 1px solid silver;
+    border-radius: 50%;
+}
