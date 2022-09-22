@@ -1,0 +1,192 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+}
+
+
+
+.main_all {
+    height: 100vh;
+    width: 85%;
+}
+
+.cart_header h1 {
+    text-align: center;
+    font-size: 4rem;
+    padding: 5% 0;
+    text-transform: uppercase;
+}
+
+.cart_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart_main>div:nth-of-type(1) {
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding-bottom: 40px;
+}
+
+.cart_main>div:nth-of-type(1),
+.cart_table *,
+.total_price_inner,
+.total_price_inner strong {
+    color: black;
+}
+
+
+.cart_table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-top: 2px solid silver;
+}
+
+.cart_table,
+.total_price_inner,
+.order_button_box a {
+    font-size: 1rem;
+
+}
+
+/* THEADE 테이블 목록 */
+
+thead th,
+.order_button_box a {
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+thead th,
+.product_checkbox,
+.product_img,
+.product_number,
+.product_price div,
+.product_btn,
+.order_button_box a {
+    text-align: center;
+}
+
+thead {
+    line-height: 3rem;
+}
+
+
+/* TBODY 상품리스트 라인 */
+
+.product_box {
+    height: 200px;
+    border-bottom: 1px solid silver;
+}
+
+.product_img_in {
+    height: 200px;
+    width: 200px;
+    background: url(../images/b.png) center;
+    background-size: 100%;
+    text-indent: -9999em;
+    margin: auto;
+}
+
+.product_btn button {
+    display: block;
+    width: 90px;
+    margin: 10px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+
+}
+
+.product_btn button:first-child,
+.order_button_box a {
+    background-color: black;
+    color: white;
+}
+
+/*--------------------반복반복 그냥 나중에 지워주세요--------------------------------*/
+.product_img_in2 {
+    height: 150px;
+    width: 150px;
+    background-image: url(../images/sofa.png);
+    background-size: 10000%;
+    text-indent: -9999em;
+}
+
+/*--------------------여기까지 그냥 반복반복 그냥 나중에 지워주세요--------------------------------*/
+
+
+.product_box_name {
+    padding: 50px;
+}
+
+.product_box_name>a {
+    display: inline-block;
+    margin: 14px 0;
+
+}
+
+.product_number>input {
+    box-sizing: border-box;
+    width: 60px;
+}
+
+
+/* 총 주문금액 라인 */
+.total_price_container {
+    margin-top: -1px;
+    width: 100%;
+    border-top: 1px solid silver;
+    border-bottom: 2px solid silver;
+}
+
+.total_price_inner {
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+
+.plus_img,
+.equal_img {
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+    background-size: 100%;
+    background-position: center;
+}
+
+.plus_img,
+.equal_img,
+.order_button_box a {
+    display: inline-block;
+}
+
+.plus_img {
+    background-image: url(../images/plus.png);
+}
+
+.equal_img {
+    background-image: url(../images/equal.png);
+}
+
+
+/* 주문 버튼 */
+.order_button_box a {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 240px;
+    margin: 40px 20px;
+    color: white;
+}
+
+.order_button_box a:first-child {
+    background-color: rgb(0, 0, 0, 0.05);
+    color: black;
+    border-color: silver
+}

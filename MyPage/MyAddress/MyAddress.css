@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+/* ======================================================================================= */
+*/
+/* =================================main============================ */
+
+main {
+    padding: 0 5%;
+    font-size: 14px;
+}
+
+.MyAddressWrap {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.MyAddressTitle {
+    margin: 0 auto;
+    height: 150px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+}
+
+/* ========================주소록 테이블====================== */
+/* ========================주소록 테이블====================== */
+/* ========================주소록 테이블====================== */
+
+.AddressTableCategory {
+    margin: 10px 0;
+}
+
+.AddressTableCategory a {
+    font-size: 15px;
+}
+
+.AddressTableCategory a:last-of-type {
+    color: black;
+    font-weight: bold;
+}
+
+.AddressTableWrap {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.AddressTable {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.AddressTable tr {
+    height: 40px;
+    border: 1px solid silver;
+}
+
+.AddressTable th {
+    border-right: 1px solid silver;
+    text-align: center;
+}
+
+.AddressTable td {
+    border-bottom: 1px solid silver;
+    text-align: center;
+}
+
+.AddressTable td a {
+    display: inline-block;
+    background-color: silver;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+}
+
+/* ======================버튼================== */
+/* ======================버튼================== */
+/* ======================버튼================== */
+
+.AddressControlButton {
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px 5px;
+    margin-bottom: 50px;
+}
+
+.AddressControlButton>a:first-of-type {
+    text-align: center;
+    width: 130px;
+    height: 35px;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.AddressControlButton>a:last-of-type {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    line-height: 27px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border: 1px solid none;
+    border-radius: 5px;
+}
+
+.AddressCaution {
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 150px;
+    border: solid 1px silver;
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}

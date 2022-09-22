@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* =================================main============================ */
+
+main {
+    padding: 0 5%;
+    font-size: 14px;
+}
+
+.MemberInfoTitle,
+.MentWrap,
+.Ment,
+.FormWrap,
+.InfoForm {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.MemberInfoTitle {
+    height: 150px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+}
+
+.MentWrap {
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ment {
+    height: 100px;
+    border: 1px silver solid;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.Ment>img {
+    display: inline-block;
+    height: 80%;
+    width: auto;
+    margin-left: 10px;
+}
+
+.MentContent>strong {
+    color: gold;
+}
+
+
+.FormWrap {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InfoFormTitle {
+    display: block;
+    margin-top: 40px;
+    color: rgba(0, 0, 0, 0.73);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.RequiredInfo {
+    margin-top: 20px;
+    border: none;
+    border-top: 1px solid silver;
+}
+
+.RequiredInfo div:not(.Tell) input {
+    padding-left: 5px;
+}
+
+.RequiredInfo>div:not(.Tell) {
+    height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+    border-bottom: 1px solid silver;
+}
+
+.RequiredInfo>div>p {
+    box-sizing: border-box;
+    border-right: 1px solid silver;
+    height: 100%;
+    padding: 10px;
+    width: 150px;
+}
+
+.RequiredInfo>div>div {
+    width: 80%;
+}
+
+.RequiredInfo>div input:not(.EmailGetRadio>input, .Tell>input) {
+    width: 150px;
+    height: 20px;
+    border: 1px solid silver;
+}
+
+.Tell {
+    height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    box-sizing: border-box;
+}
+
+.Tell p {
+    margin-right: 15px;
+}
+
+.Tell input[type="tel"] {
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid silver;
+
+}
+
+.Tell>select {
+    width: 40px;
+    outline: none;
+    margin: 0 5px;
+    border: 1px solid silver;
+    text-align: center;
+}
+
+.RequiredInfo div:last-of-type {
+    gap: 5px;
+}
+
+.EmailGetRadio>p {
+    margin-right: 20px;
+}
+
+.EmailGetRadio>input {
+    width: 30px;
+}
+
+.ButtonWrap {
+    margin-top: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ButtonWrap>button {
+    background-color: white;
+    border: 1px solid silver;
+    width: 150px;
+    height: 50px;
+}
+
+.ButtonWrap>button:hover {
+    background-color: silver;
+    border: none;
+}
+
+.ButtonWrap>a {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid silver;
+}
+
+.ButtonWrap>a:hover {
+    background-color: silver;
+    border: none;
+}
+
+
+
+
+
+
+
+#Get,
+#NoGet {
+    width: 50px;
+}

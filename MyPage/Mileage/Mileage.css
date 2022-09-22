@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/* =================================main============================ */
+
+main {
+    padding: 0 5%;
+    font-size: 14px;
+}
+
+#MyCouponListWrap,
+.MyCouponListTitle,
+.CouponListTableWrap,
+.CouponSubmit,
+.CouponCaution {
+    width: 1600px;
+    min-width: 1600px;
+    margin: 0 auto;
+}
+
+.MyCouponListTitle {
+    height: 150px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+}
+
+.CouponListTableWrap {
+    margin-top: 50px;
+}
+
+.CouponListCategory {
+    margin: 10px 0;
+}
+
+.CouponListyCategory a {
+    font-size: 15px;
+}
+
+.CouponListCategory a:last-of-type {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.CouponListTable {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.CouponListTable tr {
+    height: 40px;
+    border: 1px solid;
+}
+
+.CouponListTable th {
+    border-right: 1px solid;
+    text-align: center;
+}
+
+.CouponListTable td {
+    text-align: center;
+    height: 100px;
+}
+
+.CouponListTableWrap p {
+    text-align: center;
+    height: 60px;
+    margin: 20px;
+}
+
+.CouponSubmit {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-flow: column wrap;
+}
+
+.CouponSubmit p {
+    display: block;
+}
+
+.CouponSubmit input {
+    width: 400px;
+    height: 40px;
+}
+
+.CouponSubmit button {
+    width: 150px;
+    height: 40px;
+}
+
+.CouponCaution {
+    margin: 80px auto;
+    border: solid 1px black;
+    margin-bottom: 150px;
+}
+
+.CouponCaution p {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.CouponCaution>ul {
+    vertical-align: bottom;
+    background-color: white;
+    height: 110px;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.CouponCaution>ul li {
+    font-size: 18px;
+}

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+
+
+/* =========================================================== */
+/* =========================================================== */
+/* =========================main============================== */
+
+main {
+    padding: 0 5%;
+    margin-bottom: 150px;
+    font-size: 14px;
+}
+
+.MyOrderWrap,
+.OrderHistory,
+.OrderTableWrap {
+    margin: 0 auto;
+    min-width: 1600px;
+}
+
+.MyOrderTitle {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+}
+
+.OrderHistory {
+    margin: 20px 0;
+}
+
+.OrderHistoryCategory {
+    margin: 10px 0;
+}
+
+.OrderHistoryCategory a {
+    font-size: 15px;
+}
+
+.OrderHistoryCategory a:last-of-type {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.SelectOrderCondition {
+    display: flex;
+    border: 1px solid silver;
+    border-bottom: 1px solid;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.SelectOrderCondition p {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-right: 1px solid silver;
+}
+
+.SelectOrderCondition p:first-of-type,
+.SelectOrderCondition p:first-of-type a {
+    background-color: black;
+    color: white;
+}
+
+.SelectOrderCondition p:last-of-type {
+    background-color: white;
+    color: black;
+}
+
+.OrderConditionWrap {
+    margin: 20px 0;
+    width: 100%;
+    height: 80px;
+    border: solid 2px silver;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px;
+    gap: 20px;
+}
+
+.OrderConditionDate a {
+    border: 0.5px solid silver;
+    font-size: 12px;
+    padding: 4px;
+}
+
+.OrderConditionDate+div a {
+    border: 0.5px solid silver;
+    font-size: 12px;
+    padding: 4px;
+}
+
+
+.OrderHistory ul li {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.OrderTableTitle {
+    height: 25px;
+    line-height: 25px;
+    color: grey;
+}
+
+.OrderTable {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.OrderTable tr {
+    height: 40px;
+    border: 1px solid silver;
+}
+
+.OrderTable th {
+    border-right: 1px solid silver;
+    text-align: center;
+}
+
+.OrderTable td {
+    text-align: center;
+    height: 100px;
+}
+
+.OrderTable+p {
+    padding: 30px;
+    text-align: center;
+}

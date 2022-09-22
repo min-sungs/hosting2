@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/* =================================main============================ */
+
+main {
+    padding: 0 5%;
+    font-size: 14px;
+}
+
+#MyCouponListWrap,
+.MyCouponListTitle,
+.CouponListTableWrap,
+.CouponSubmit,
+.CouponCaution {
+    margin: 0 auto;
+}
+
+.MyCouponListTitle {
+    height: 150px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+}
+
+.CouponListTableWrap {
+    margin-top: 50px;
+}
+
+.CouponListCategory {
+    margin: 10px 0;
+}
+
+.CouponListCategory a {
+    font-size: 15px;
+}
+
+.CouponListCategory a:last-of-type {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.CouponListTable {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.CouponListTable tr {
+    height: 40px;
+    border: 1px solid silver;
+}
+
+.CouponListTable th {
+    border-right: 1px solid silver;
+    text-align: center;
+}
+
+.CouponListTable td {
+    white-space: nowrap;
+    text-align: center;
+    height: 100px;
+}
+
+.CouponListTableWrap p {
+    text-align: center;
+    height: 60px;
+    margin: 20px;
+}
+
+.CouponSubmit {
+    border: 1px solid silver;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-flow: column wrap;
+}
+
+.CouponSubmit>div {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.CouponSubmit p {
+    display: block;
+}
+
+.CouponSubmit input {
+    width: 400px;
+    height: 40px;
+}
+
+.CouponSubmit button {
+    width: 150px;
+    height: 40px;
+}
+
+/* ================================================================ */
+/* ===========================CouponCaution======================== */
+/* ===========================CouponCaution======================== */
+
+.CouponCaution {
+    margin: 80px auto;
+    border: solid 1px silver;
+    margin-bottom: 150px;
+    border: 1px solid silver;
+}
+
+.CouponCaution p {
+    background-color: white;
+    color: black;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    padding: 0 10px;
+    border-bottom: 1px solid silver;
+}
+
+.CouponCaution>ul {
+    vertical-align: bottom;
+    background-color: white;
+    height: 110px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+
+.CouponCaution>ul li {
+    font-size: 15px;
+}
+
+.CouponCaution ul li strong {
+    font-weight: bold;
+    font-size: 17px;
+}

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
+/* ============================================================================================ */
+/* ============================================================================================ */
+/* =================================main============================ */
+
+main {
+    padding: 0 5%;
+    font-size: 14px;
+}
+
+#MyPostWrap,
+.PostTableWrap {
+    margin: 0 auto;
+}
+
+.MyPostUpper select {
+    font-size: 12px;
+}
+
+.MyPostTitle {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+}
+
+.PostTableWrap span:first-of-type,
+.PostTableWrap select {
+    color: black;
+}
+
+.PostTableWrap {
+    width: 100%;
+    margin: 50px auto;
+    margin-bottom: 200px;
+}
+
+.PostTableCategory {
+    margin: 10px 0;
+}
+
+.PostTableCategory a {
+    font-size: 15px;
+}
+
+.PostTableCategory a:last-of-type {
+    color: black;
+    font-weight: bold;
+}
+
+.PostTable {
+    width: 100%;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+.PostTable tr {
+    height: 40px;
+    border: 1px solid silver;
+}
+
+.PostTable th {
+    border-right: 1px solid silver;
+    text-align: center;
+}
+
+.PostTable td {
+    border-bottom: 1px solid silver;
+    text-align: center;
+}
+
+.PostControlButton {
+    margin: 0 auto;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 5px;
+}

@@ -1,0 +1,495 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: black;
+}
+
+section>h3 {
+    margin: 5% 0;
+    font-size: 4rem;
+    font-weight: lighter;
+    color: black;
+}
+
+main {
+    font-size: 10px;
+}
+
+.PaymentForm {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 150px;
+    gap: 10rem;
+}
+
+section {
+    margin: 0 auto;
+    width: 65%;
+}
+
+section>.MemberPaymentWrap>.PaymentForm>div:not(div:last-of-type) {
+    width: 70%
+}
+
+.MemPayOrderSubtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid grey;
+    box-sizing: border-box;
+    padding: .5rem;
+    color: black;
+}
+
+/* =============================배송정보=========================== */
+/* =============================배송정보=========================== */
+/* =============================배송정보=========================== */
+
+.MemPayOrderInfo>div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.MemPayOrderInfo label {
+    display: inline-block;
+    font-size: 2rem;
+    color: black;
+    width: 20%;
+    height: 40px;
+}
+
+.PaymentForm>.MemPayOrderInfo {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+}
+
+.MemPayOrderInfo>div:nth-of-type(2) {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.MemPayOrderInfo>div:nth-of-type(2)>input {
+    margin: 0 1rem;
+}
+
+.PaymentForm>.MemPayOrderInfo input {
+    width: 30%;
+    height: 4rem;
+    line-height: 4rem;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.MemPayOrderInfo>div:nth-of-type(2)>input[type="tell"] {
+    width: 9%;
+    text-align: center;
+    padding: 0;
+}
+
+.PaymentForm>.MemPayOrderInfo select {
+    width: 30%;
+    height: 40px;
+}
+
+.PaymentForm>.MemPayOrderInfo>div:last-of-type>input {
+    display: none;
+}
+
+.PaymentForm>.MemPayOrderProductInfo>div:first-of-type {
+    padding-left: 1%;
+    display: flex;
+    border-bottom: 1px solid silver;
+}
+
+.PaymentForm>.MemPayOrderProductInfo>div:first-of-type>img {
+    flex: 1;
+    width: 10%;
+}
+
+.PaymentForm>.MemPayOrderProductInfo>div:first-of-type>div:first-of-type {
+    flex: 2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding-left: 1%;
+}
+
+.PaymentForm>.MemPayOrderProductInfo>div:first-of-type>div .MemPayOrderProductName {
+    font-size: 1.7rem;
+    color: black;
+}
+
+.PaymentForm>.MemPayOrderProductInfo>div:first-of-type>div span {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.PaymentForm>.MemPayOrderProductInfo>div:first-of-type>p {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column wrap;
+    font-size: 3rem;
+    border-left: 1px solid silver;
+    color: grey;
+}
+
+.MemPayOrderInfo>div>label {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.PaymentForm .MemPayOrderInfo .MemPayOrderAddressInputWrap {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.PaymentForm .MemPayOrderInfo .MemPayOrderAddressInputWrap .AddressInput {
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    gap: 2rem;
+}
+
+.PaymentForm .MemPayOrderInfo .MemPayOrderAddressInputWrap .AddressInput>div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.PaymentForm .MemPayOrderInfo .MemPayOrderAddressInputWrap .AddressInput>div>a {
+    border: 1px solid silver;
+    width: 15%;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 2%;
+}
+
+.PaymentForm .MemPayOrderInfo .MemPayOrderAddressInputWrap .AddressInput>div>span {
+    display: flex;
+    padding-left: 2%;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.PaymentForm .MemPayOrderInfo .MemPayOrderAddressInputWrap .AddressInput input {
+    height: 40px;
+    width: 60%;
+}
+
+.PaymentForm .MemPayOrderInfo .MemPayOrderAddressInputWrap .AddressInput>div:first-of-type input {
+    height: 40px;
+    width: 20%;
+}
+
+.PaymentForm>.MemPayOrderProductInfo>div:first-of-type>p>.SmallGuide {
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.PaymentForm>.MemPayOrderProductInfo>div:first-of-type>p>.SmallGuide+span {
+    font-size: 2rem;
+    color: grey;
+}
+
+.PaymentForm>.MemPayOrderProductInfo>select {
+    margin-top: 2rem;
+    width: 40%;
+    height: 4rem;
+}
+
+/* =========================적립금 사용======================= */
+/* =========================적립금 사용======================= */
+/* =========================적립금 사용======================= */
+
+section>.MemberPaymentWrap>.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type,
+section>.MemberPaymentWrap>.PaymentForm>.MemPayOrderMileageWrap>.MemPayOrderCoupon {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type>.MemPayOrderUserMileageWrap,
+.PaymentForm>.MemPayOrderMileageWrap>div:nth-of-type(2)>.MemPayOrderUserCouponWrap {
+    flex: 1;
+    height: 12rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type>.MemPayOrderUserMileageWrap span,
+.PaymentForm>.MemPayOrderMileageWrap>.MemPayOrderCoupon>.MemPayOrderUserCouponWrap span {
+    font-size: 1.5rem;
+}
+
+.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type>.MemPayOrderUserMileageWrap strong {
+    font-size: 2.5rem;
+    display: inline-block;
+    padding-bottom: .3rem;
+}
+
+.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type>.MemPayOrderMileageUseInputWrap,
+.PaymentForm>.MemPayOrderMileageWrap>div:nth-of-type(2)>.MemPayOrderCouponUseInputWrap {
+    flex: 4;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.PaymentForm>.MemPayOrderMileageWrap>div:nth-of-type(2)>.MemPayOrderCouponUseInputWrap select {
+    width: 40%;
+    height: 4rem;
+}
+
+.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type .MemPayOrderMileageUseInput {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1%;
+    align-items: center;
+}
+
+.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type .MemPayOrderMileageUseInput>span {
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type>.MemPayOrderMileageUseInputWrap>div:first-of-type>input {
+    width: 20%;
+    height: 40px;
+    padding-left: 1rem;
+}
+
+.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type>.MemPayOrderMileageUseInputWrap>div:first-of-type>button {
+    width: 10%;
+    height: 40px;
+}
+
+.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type>.MemPayOrderMileageUseInputWrap>div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+}
+
+.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type>.MemPayOrderMileageUseInputWrap>div:nth-of-type(2)>input {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.PaymentForm>.MemPayOrderMileageWrap>div:first-of-type>.MemPayOrderMileageUseInputWrap>div:nth-of-type(2)>input+span {
+    font-size: 1.5rem;
+}
+
+
+
+/* ========================결제수단======================== */
+/* ========================결제수단======================== */
+/* ========================결제수단======================== */
+
+.PaymentForm>.MemPayOrderPayMeth>div:first-of-type {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 2%;
+}
+
+.PaymentForm>.MemPayOrderPayMeth>div:first-of-type>label {
+    display: flex;
+    flex-flow: row wrap;
+    width: 23%;
+    height: 7em;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.PaymentForm>.MemPayOrderPayMeth>div:first-of-type>label input {
+    display: none;
+}
+
+.PaymentForm>.MemPayOrderPayMeth>div:first-of-type>label span {
+    flex: 3;
+    color: grey;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.PaymentForm>.MemPayOrderPayMeth>div:first-of-type>label img {
+    flex: 1;
+    width: 20px;
+    height: 40px;
+}
+
+.PaymentForm>.MemPayOrderPayMeth>div:first-of-type>label input:checked+img,
+.PaymentForm>.MemPayOrderPayMeth>div:first-of-type>label input:checked+img+span {
+    filter: invert(5%) sepia(78%) saturate(4495%) hue-rotate(294deg) brightness(101%) contrast(100%);
+    color: #530848;
+}
+
+.PaymentForm>.MemPayOrderPayMeth>div:first-of-type>label input:checked+img+span+div {
+    width: 100%;
+    height: 100%;
+    width: 10.5%;
+    height: 7em;
+    background-color: #530848;
+    opacity: .3;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.PaymentForm .MemPayOrderPayMeth>div:first-of-type>label:nth-of-type(1) input:checked .MemPayOrderCardPayment {
+    display: block;
+}
+
+.PaymentForm .MemPayOrderPayMeth>.MemPayOrderCardPayment {
+    display: flex;
+    flex-flow: column wrap;
+    height: 150px;
+    justify-content: space-evenly;
+}
+
+.PaymentForm .MemPayOrderPayMeth>.MemPayOrderCardPayment>div {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10%;
+}
+
+.PaymentForm .MemPayOrderPayMeth>.MemPayOrderCardPayment>div>p {
+    font-size: 2em;
+    color: grey;
+}
+
+.PaymentForm .MemPayOrderPayMeth>.MemPayOrderCardPayment>div>select {
+    width: 30%;
+}
+
+.MemberPayMentFinPrice {
+    display: inline-block;
+    position: fixed;
+    right: calc(100vw * 0.35 * 0.4);
+    width: calc(100vw * 0.7 * 0.30);
+    top: 20rem;
+    background-color: white;
+}
+
+.MemberPayMentFinPrice>p:first-of-type {
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+}
+
+.MemberPayMentFinPrice>div:first-of-type {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+}
+
+.MemberPayMentFinPrice>div:first-of-type>div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MemberPayMentFinPrice>div:first-of-type>div>span {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.MemberPayMentFinPrice>div:first-of-type>div>span>strong {
+    font-size: 2rem;
+}
+
+.MemberPayMentFinPrice>div:first-of-type>.MemPayDiscountPriceWrap>span:last-of-type {
+    color: dodgerblue;
+}
+
+.MemberPayMentFinPrice>div:first-of-type>.MemPayDiscountPriceWrap>span:last-of-type>strong {
+    font-weight: bold;
+    font-size: 2rem;
+    color: dodgerblue;
+}
+
+.MemberPayMentFinPrice>div:first-of-type .MemPayTotalPriceWrap span:first-of-type {
+    font-weight: bold;
+    color: grey;
+}
+
+.MemberPayMentFinPrice>div:first-of-type .MemPayTotalPriceWrap span:last-of-type,
+.MemberPayMentFinPrice>div:first-of-type .MemPayTotalPriceWrap strong {
+    color: #530848;
+}
+
+.MemberPayMentFinPrice>div:first-of-type .MemPayTotalPriceWrap strong {
+    font-size: 3rem;
+}
+
+.MemPayOrderTotalAgree {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.MemPayOrderTotalAgree>input {
+    width: 2rem;
+    height: 2rem;
+}
+
+.MemPayOrderTotalAgree>label {
+    color: grey;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+}
+
+.MemPayOrderTotalAgreeSection {
+    padding-left: 2rem;
+}
+
+.MemPayOrderTotalAgreeSection li {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.MemPayOrderTotalAgreeSection+div {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MemPayOrderTotalAgreeSection+div>button {
+    margin-top: 2rem;
+    width: 30rem;
+    height: 4rem;
+    background-color: #530848;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MemPayOrderTotalAgreeSection li label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: grey;
+}

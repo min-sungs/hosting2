@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./MyOrder.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <title>GooHae-MyPage-MyOrder</title>
+</head>
+
+<body>
+    <header>
+        <div class="logoWrap">
+            <div class="logoInner">
+                <h1 class="logo">
+                    <a href="../../index.html">LOGO</a>
+                </h1>
+            </div>
+
+            <nav class="headerNav">
+                <ul>
+                    <li><a href="../../Login/Login.html">LOGIN</a></li>
+                    <li><a href="../../MyPage/MyPageMain/MyPage.html">마이페이지</a></li>
+                    <li><a href="../../signup/signUp.html">회원가입</a></li>
+                    <li class="cart"><a href="../../Shoppingcart/Shoppingcart.html">CART</a></li>
+                    <li>
+                        <form action="#">
+                            <input type="text">
+                            <button></button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="categoryWrap">
+            <ul class="category">
+                <li><a href="../../sub_list_page/1.sub_bed/sub_bed.html">침실</a>
+                    <ul>
+                        <li><a href="../../sub_list_page/1.sub_bed/1.bed_one/bed_one.html">일체형</a></li>
+                        <li><a href="../../sub_list_page/1.sub_bed/2.bed_mattress/bed_mattress.html">매트리스</a></li>
+                        <li><a href="../../sub_list_page/1.sub_bed/3.bed_table/bed_table.html">협탁</a></li>
+                        <li><a href="../../sub_list_page/1.sub_bed/4.bed_makeup/bed_makeup.html">화장대</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../../sub_list_page/2.sub_living/sub_living.html">리빙</a>
+                    <ul>
+                        <li><a href="../../sub_list_page/2.sub_living/1.living_sofa/living_sofa.html">소파</a></li>
+                        <li><a href="../../sub_list_page/2.sub_living/2.living_table/living_table.html">테이블</a></li>
+                        <li><a href="../../sub_list_page/2.sub_living/3.living_chair/living_chair.html">의자</a></li>
+                        <li><a href="../../sub_list_page/2.sub_living/4.living_tv/living_tv.html">TV장</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../../sub_list_page/3.sub_kitchen/sub_kitchen.html">주방</a>
+                    <ul>
+                        <li><a href="../../sub_list_page/3.sub_kitchen/1.kitchen_table/kitchen_table.html">식탁</a></li>
+                        <li><a href="../../sub_list_page/3.sub_kitchen/2.kitchen_chair/kitchen_chair.html">의자</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../../sub_list_page/4.sub_dressroom/sub_dressroom.html">드레스룸</a>
+                    <ul>
+                        <li><a
+                                href="../../sub_list_page/4.sub_dressroom/1.dressroom_storage/dressroom_storage.html">수납장</a>
+                        </li>
+                        <li><a
+                                href="../../sub_list_page/4.sub_dressroom/2.dressroom_hanger/dressroom_hanger.html">행거</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="../../customer/main.html">고객센터</a>
+                    <ul>
+                        <li><a href="../../customer/FAQ/faq.html">FAQ</a></li>
+                        <li><a href="../../customer/notice/notice.html">공지사항</a></li>
+                        <li><a href="../../customer/inquiry/inquiry.html">QnA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="MyOrderWrap">
+            <div class="MyOrderTitle">MY ORDER</div>
+
+            <article class="OrderHistory">
+                <div class="OrderHistoryCategory">
+                    <a href="../../index.html">홈 ></a>
+                    <a href="../MyPageMain/MyPage.html">마이쇼핑 ></a>
+                    <a href="">주문조회</a>
+                </div>
+
+                <div class="SelectOrderCondition">
+                    <p><a href="#">주문내역조회(0)</a></p>
+                    <p><a href="./MyOrderTwo.html">취소/반품/교환 내역(0)</a></p>
+                </div>
+
+                <div class="OrderConditionWrap">
+                    <div>
+                        <select name="OrderCondition" id="">
+                            <option value="1">전체 주문처리상태</option>
+                            <option value="2">입금전</option>
+                            <option value="3">배송준비중</option>
+                            <option value="4">배송중</option>
+                            <option value="5">배송완료</option>
+                            <option value="6">취소</option>
+                            <option value="7">교환</option>
+                            <option value="8">반품</option>
+                        </select>
+                    </div>
+                    <div class="OrderConditionDate">
+                        <a href="#">오늘</a>
+                        <a href="#">1주일</a>
+                        <a href="#">1개월</a>
+                        <a href="#">3개월</a>
+                        <a href="#">6개월</a>
+                    </div>
+                    <div>
+                        <input type="date">
+                        <span>&nbsp;~&nbsp;</span>
+                        <input type="date">
+                        <a href="#">조회</a>
+                    </div>
+                </div>
+
+                <ul>
+                    <li>기본적으로 최근 3개월간의 자료가 조회되며, 기간 검색시 지난 주문내역을 조회하실 수 있습니다.</li>
+                    <li>주문번호를 클릭하시면 해당 주문에 대한 상세내역을 확인하실 수 있습니다.</li>
+                </ul>
+            </article>
+
+            <article class="OrderTableWrap">
+                <p class="OrderTableTitle">주문 상품 정보</p>
+                <form action="">
+                    <table class="OrderTable">
+                        <colgroup>
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="30%">
+                            <col width="7%">
+                            <col width="13%">
+                            <col width="13%">
+                            <col width="13%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">주문일자</th>
+                                <th scope="col">이미지</th>
+                                <th scope="col">상품정보</th>
+                                <th scope="col">수량</th>
+                                <th scope="col">상품구매금액</th>
+                                <th scope="col">주문처리상태</th>
+                                <th scope="col">취소/교환/반품</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <p>- 1 -</p>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerInfo">
+            <p>
+                <span><a href="#">쇼핑몰 이용안내</a></span>
+                <span><a href="#">개인정보 처리방침</a></span>
+                <span><a href="#">이용약관</a></span>
+            </p>
+        </div>
+
+        <div class="footerStory">
+            <div>
+                <div>
+                    <h3>그린컴퓨터아카데미</h3>
+                </div>
+
+                <div>
+                    <h3>구해조</h3>
+                </div>
+
+                <div class="teamEmail">
+                    <span>KJW@email.com</span>
+                    <span>KMS@email.com</span>
+                    <span>YJH@email.com</span>
+                    <span>LHS@email.com</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

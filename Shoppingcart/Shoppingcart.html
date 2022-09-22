@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GooHae-Shoppingcart</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="./Shoppingcart.css">
+</head>
+
+<body>
+    <header>
+        <div class="logoWrap">
+            <div class="logoInner">
+                <h1 class="logo">
+                    <a href="../index.html">LOGO</a>
+                </h1>
+            </div>
+
+            <nav class="headerNav">
+                <ul>
+                    <li><a href="../Login/Login.html">LOGIN</a></li>
+                    <li><a href="../MyPage/MyPageMain/MyPage.html">마이페이지</a></li>
+                    <li><a href="../signup/signUp.html">회원가입</a></li>
+                    <li class="cart"><a href="../Shoppingcart/Shoppingcart.html">CART</a></li>
+                    <li>
+                        <form action="#">
+                            <input type="text">
+                            <button></button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="categoryWrap">
+            <ul class="category">
+                <li><a href="../sub_list_page/1.sub_bed/sub_bed.html">침실</a>
+                    <ul>
+                        <li><a href="../sub_list_page/1.sub_bed/1.bed_one/bed_one.html">일체형</a></li>
+                        <li><a href="../sub_list_page/1.sub_bed/2.bed_mattress/bed_mattress.html">매트리스</a></li>
+                        <li><a href="../sub_list_page/1.sub_bed/3.bed_table/bed_table.html">협탁</a></li>
+                        <li><a href="../sub_list_page/1.sub_bed/4.bed_makeup/bed_makeup.html">화장대</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../sub_list_page/2.sub_living/sub_living.html">리빙</a>
+                    <ul>
+                        <li><a href="../sub_list_page/2.sub_living/1.living_sofa/living_sofa.html">소파</a></li>
+                        <li><a href="../sub_list_page/2.sub_living/2.living_table/living_table.html">테이블</a></li>
+                        <li><a href="../sub_list_page/2.sub_living/3.living_chair/living_chair.html">의자</a></li>
+                        <li><a href="../sub_list_page/2.sub_living/4.living_tv/living_tv.html">TV장</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../sub_list_page/3.sub_kitchen/sub_kitchen.html">주방</a>
+                    <ul>
+                        <li><a href="../sub_list_page/3.sub_kitchen/1.kitchen_table/kitchen_table.html">식탁</a></li>
+                        <li><a href="../sub_list_page/3.sub_kitchen/2.kitchen_chair/kitchen_chair.html">의자</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../sub_list_page/4.sub_dressroom/sub_dressroom.html">드레스룸</a>
+                    <ul>
+                        <li><a
+                                href="../sub_list_page/4.sub_dressroom/1.dressroom_storage/dressroom_storage.html">수납장</a>
+                        </li>
+                        <li><a href="../sub_list_page/4.sub_dressroom/2.dressroom_hanger/dressroom_hanger.html">행거</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="../customer/main.html">고객센터</a>
+                    <ul>
+                        <li><a href="../customer/FAQ/faq.html">FAQ</a></li>
+                        <li><a href="../customer/notice/notice.html">공지사항</a></li>
+                        <li><a href="../customer/inquiry/inquiry.html">QnA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="main_all">
+            <section class="cart_header">
+                <h1>cart</h1>
+            </section>
+            <section class="cart_main">
+                <div>주문하실 상품을 선택해 주세요</div>
+                <div class="cart_table_container">
+                    <table class="cart_table">
+                        <colgroup>
+                            <col style="width:200px">
+                            <col style="width:300PX">
+                            <col style="width:1200px">
+                            <col style="width:300px">
+                            <col style="width:300px">
+                            <col style="width:300px">
+                        </colgroup>
+                        <!-- 상품목록 -->
+                        <thead>
+                            <tr>
+                                <th scope="col" class="all-select-event">
+                                    <label>
+                                        <input type="checkbox" checked="checked">
+                                    </label>
+                                </th>
+                                <th scope="cos">이미지</th>
+                                <th scope="col">상품정보</th>
+                                <th scope="col">수량</th>
+                                <th scope="col">상품금액</th>
+                                <th scope="col">주문</th>
+                            </tr>
+                        </thead>
+                        <!-- 상품 리스트 라인-->
+                        <tbody>
+                            <tr class="product_box">
+                                <td class="product_checkbox">
+                                    <input type="checkbox" checked="checked" vlaue=" ">
+                                </td>
+                                <td class="product_img">
+                                    <div class="product_img_in">
+                                        이미지
+                                    </div>
+                                </td>
+                                <td class="product_box_name">
+                                    <a href="#">
+                                        <strong>
+                                            잠자는 숲속의 공주 침대 + 머슬파워업매트
+                                        </strong>
+                                    </a>
+                                    <div>[옵션: 화이트]</div>
+                                </td>
+                                <td class="product_number">
+                                    <input type="number" min="1">
+                                    <a href="">
+                                        <button>변경</button>
+                                    </a>
+                                </td>
+                                <td class="product_price">
+                                    <div><b>10000원</b></div>
+                                </td>
+                                <td class="product_btn">
+                                    <button>
+                                        바로구매
+                                    </button>
+                                    <button>
+                                        삭제하기
+                                    </button>
+                                </td>
+                            </tr>
+                            <!--------------------반복반복 그냥 나중에 지워주세요-------------------------------->
+                            <tr class="product_box">
+                                <td class="product_checkbox">
+                                    <input type="checkbox" checked="checked" vlaue=" ">
+                                </td>
+                                <td class="product_img">
+                                    <div class="product_img_in2">
+                                        이미지
+                                    </div>
+                                </td>
+                                <td class="product_box_name">
+                                    <a href=" #">
+                                        <strong>
+                                            폭신폭신 푹신한 쇼파
+                                        </strong>
+                                    </a>
+                                    <div>[옵션: 베이지]</div>
+                                </td>
+                                <td class="product_number">
+                                    <input type="number" min="1">
+                                    <a href="">
+                                        <button>변경</button>
+                                    </a>
+                                </td>
+                                <td class="product_price">
+                                    <div><b>10000원</b></div>
+                                </td>
+                                <td class="product_btn">
+                                    <button>바로구매</button>
+                                    <button>삭제하기</button>
+                                </td>
+                            </tr>
+                            <!-- ----------------------------여기까지 그냥반복 나중에 지워주세요--------------------------------- -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 총 주문금액 라인-->
+                <div class="total_price_container">
+                    <d< /div>
+                        <div class="total_price_inner">
+                            총 상품가격
+                            <strong>20000</strong>
+                            원
+
+                            <span class="plus_img"></span>
+                            배송비
+                            <strong>3000</strong>
+                            원
+
+                            <span class="equal_img"></span>
+                            총 주문금액
+                            <strong>23000</strong>
+                            원
+                        </div>
+                </div>
+                <!-- 주문버튼 -->
+                <div class="order_button_box">
+                    <a href="">선택상품 주문</a>
+                    <a href="">전체상품 주문</a>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <div class="footerInfo">
+            <p>
+                <span><a href="#">쇼핑몰 이용안내</a></span>
+                <span><a href="#">개인정보 처리방침</a></span>
+                <span><a href="#">이용약관</a></span>
+            </p>
+        </div>
+
+        <div class="footerStory">
+            <div>
+                <div>
+                    <h3>그린컴퓨터아카데미</h3>
+                </div>
+
+                <div>
+                    <h3>구해조</h3>
+                </div>
+
+                <div class="teamEmail">
+                    <span>KJW@email.com</span>
+                    <span>KMS@email.com</span>
+                    <span>YJH@email.com</span>
+                    <span>LHS@email.com</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

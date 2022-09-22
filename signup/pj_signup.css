@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0 ;
+    border-radius: 5px;
+    color: gray
+}
+
+.logo, 
+.terms_p,
+.input_box label,
+.input_box input,
+button {
+    height: 30px;
+    width: 400px;
+}
+
+/* -------------------중앙에 오기하기+배경------------------------- */
+
+body{
+    height: 100vh;
+   
+}
+.all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ---------------------------------------------- */
+.container {
+    width: 410px;
+
+    border-radius: 20px;
+}
+
+.container_header a{
+    display: inline-block;
+    width: 80%;
+    height: 150px;
+    background:url(../images/LOGO.png) center no-repeat;
+    background-size:100% ;
+    margin:0 3em auto;
+}
+form{
+    width: 400px;
+    margin: auto;
+}
+fieldset {
+    border: none;
+}
+.number-add div *{
+    line-height: 30px;
+}
+.input_box label {
+    display: block; 
+}
+
+.input_box input {
+    text-indent: 1em;
+    outline: 0;
+    border: 1px solid silver;
+    
+}
+span{
+    font-size: 12px;
+    display: block;
+    margin-bottom:5px ;
+
+}
+input,
+.Tell,
+.terms{
+margin-bottom: 2em;
+}
+.email_input{
+    display: flex;
+    flex-basis:100% ;
+    width: 360px;
+}
+.email_input *{
+    margin-bottom: 10px;
+
+}
+
+.idInput{
+    height: 32px;
+}
+
+.Tell {
+    height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+
+.Tell input {
+    width:60px;
+    margin: 0;
+    text-align: left;
+    border: 1px solid silver;
+    flex: 2;
+}
+.Tell input:first-of-type{
+    width: 60px;
+    flex: 1.5;
+}
+
+
+
+button {
+    height: 40px;
+    border-radius: 5px;
+    background-color:black;
+    color:white;
+    border-style:none ;
+    margin-bottom:3em;
+
+}
